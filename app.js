@@ -30,6 +30,18 @@ app.post('/newCustomer', (req, res) => {
     })
 })
 
+app.put('/customer/edit/:customerId', (req, res) => {
+    res.json({
+        msm: "Respuesta 200 for Edit"
+    })
+})
+
+app.delete('/customer/delete/:customerId', (req, res) => {
+    res.json({
+        msm: "Respuesta 200 for Delete"
+    })
+})
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
 })
