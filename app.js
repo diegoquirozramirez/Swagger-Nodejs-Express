@@ -26,7 +26,7 @@ app.get('/customer/:customerId', (req, res) => {
 
 app.post('/newCustomer', (req, res) => {
     res.json({
-        msm: "Respuesta 200"
+        msm: "Respuesta 200!"
     })
 })
 
